@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prism"
+version = "0.1.0"
+description = "Prism: an event-driven backtesting engine for trading strategies"
+authors = [
+  { name="Nilesh Suthar", email="neelesh.suthar22@gmail.com" }
+]
+license = "Apache-2.0"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas",
+  "numpy",
+  "pydantic",
+  "matplotlib",
+  "pytest"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nilesh112233/Prism"
+"Bug Tracker" = "https://github.com/nilesh112233/Prism/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
